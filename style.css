@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    max-width: 1000px;
+    width: 90%;
+}
+
+.calculator {
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    padding: 30px;
+    width: 70%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #00ff00; 
+}
+
+.display input {
+    width: 100%;
+    height: 70px;
+    font-size: 2rem;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    text-align: right;
+    background-color: #333333;
+    color: #00ff00;
+    font-weight: bold;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #333333;
+    color: #00ff00;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    background-color: #00ff00;
+    color: #1b1b1b;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button.zero {
+    grid-column: span 2;
+}
+
+.history {
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    padding: 30px;
+    width: 30%;
+    max-height: 600px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    overflow-y: auto;
+}
+
+.history h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00ff00; 
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history li {
+    padding: 12px;
+    margin-bottom: 8px;
+    background: #333333;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #00ff00;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.calculator::before {
+    content: url('https://images.alphacoders.com/116/1163698.jpg');
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: auto;
+    opacity: 0.7;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00ff00;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    max-width: 1000px;
+    width: 90%;
+}
+
+.calculator {
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    padding: 30px;
+    width: 70%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #00ff00; /* Green border */
+}
+
+.display input {
+    width: 100%;
+    height: 70px;
+    font-size: 2rem;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    text-align: right;
+    background-color: #333333;
+    color: #00ff00; /* Green text */
+    font-weight: bold;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #333333;
+    color: #00ff00;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    background-color: #00ff00;
+    color: #1b1b1b;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button.zero {
+    grid-column: span 2;
+}
+
+.history {
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    padding: 30px;
+    width: 30%;
+    max-height: 600px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    overflow-y: auto;
+}
+
+.history h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00ff00; /* Green text */
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history li {
+    padding: 12px;
+    margin-bottom: 8px;
+    background: #333333;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #00ff00;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.calculator::before {
+    content: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Ben_10_logo.svg/640px-Ben_10_logo.svg.png');
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: auto;
+    opacity: 0.7;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00ff00;
+}
